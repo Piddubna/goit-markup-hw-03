@@ -4,12 +4,24 @@ color:#434455;
 background-color:#FFFFFF;
 }
 
-a{
+a {
 text-decoration: none;
 }
 
-ol,ul{
+ol, ul {
     list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+ }
+
+ p, h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
  }
 
 .logo {
@@ -65,6 +77,21 @@ font-style: normal;
     color: #fff;
 }
 
+.hero-container {
+padding-top: 188px; 
+padding-left: 472px;
+padding-right: 472px;
+padding-bottom: 292px;
+}
+
+
+.container {
+    width:1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+   
 .hero-btn {
     font-family: "Roboto", sans-serif ;
     color: #fff;
@@ -73,10 +100,11 @@ font-style: normal;
     letter-spacing: 0.04em;
     cursor: pointer;
     background: #4D5AE5;
+    margin: 0 auto;
 }
 
 .hero-btn:hover {
-background: #404BBF;
+ background: #404BBF;
 }
 .hero-btn:focus {
 background: #404BBF;
