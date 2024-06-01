@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
 font-family:"Roboto",sans-serif;
 color:#434455;
@@ -19,10 +25,11 @@ ol, ul {
     margin-top: 0;
     margin-bottom: 0;
  }
- .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
- }
+ 
+ img {
+	display: block;
+    max-width : 100% ;
+}
 
 .logo {
 font-family:"Raleway",sans-serif;
@@ -38,12 +45,19 @@ font-family:"Raleway",sans-serif;
     color: #2E2F42;
 }
 
+.menu-nav {
+ display: flex;   
+}
+
 .nav-link {
+    display: block;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
+        padding: 10px;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        display: inline-block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -91,16 +105,25 @@ padding-bottom: 292px;
     padding-right: 15px;
     margin: 0 auto;
 }
-   
+
+ .container-button {
+    width: 233px;
+    height: 88px;
+    margin: 0 auto;
+    margin-top: 48px;
+    padding: 16px 32px;
+    border-radius: 5px;
+ }  
 .hero-btn {
     font-family: "Roboto", sans-serif ;
     color: #fff;
     font-weight: 500;
     line-height: 1.5;
+    
     letter-spacing: 0.04em;
     cursor: pointer;
     background: #4D5AE5;
-    margin: 0 auto;
+   
 }
 
 .hero-btn:hover {
@@ -110,16 +133,14 @@ padding-bottom: 292px;
 background: #404BBF;
 }
 
-.features-container {
-    width: 1128px;
-    height: 104px;
-    top: 792px;
-    left: 156px;
-    gap: 0px;
-    opacity: 0px;
-    margin-top: 120px;
-    margin-bottom: 99px;
-      
+
+.features-list {
+    display: flex;   
+    padding: 24px;
+  margin: 118px;
+  list-style: none;
+  border-radius: 4px;
+
 }
 .features-subtitle {
     font-weight: 500;
@@ -137,7 +158,11 @@ background: #404BBF;
     color: #434455 ;
 }
 .team {
+    width: 1440px; 
+    height: 732px; 
+    padding-top: 120px;
   background-color: #F4F4FD;  
+  margin: 0 auto;
 }
 
 .team-title-title {
@@ -148,6 +173,15 @@ background: #404BBF;
     color: #2E2F42;
      text-align: center;
     text-transform: capitalize;
+}
+
+.team-list {
+display: flex;   
+ padding: 24px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+
 }
 
 .team-item {
@@ -170,6 +204,13 @@ background: #404BBF;
     color: #434455 ;
 }
 
+.portfolio-list {
+    display: flex;   
+    padding: 24px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;  
+}
 .portfolio-title-title {
     font-weight: 700;
     font-size: 36px;
@@ -225,6 +266,3 @@ font-weight: 500;
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
-
-
-
